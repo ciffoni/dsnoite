@@ -1,0 +1,11 @@
+C:\Users\cwb\source\repos\testando\bin\Debug\testando.exe.config
+C:\Users\cwb\source\repos\testando\bin\Debug\testando.exe
+C:\Users\cwb\source\repos\testando\bin\Debug\testando.pdb
+C:\Users\cwb\source\repos\testando\obj\Debug\testando.csproj.AssemblyReference.cache
+C:\Users\cwb\source\repos\testando\obj\Debug\testando.csproj.SuggestedBindingRedirects.cache
+C:\Users\cwb\source\repos\testando\obj\Debug\testando.Properties.Resources.resources
+C:\Users\cwb\source\repos\testando\obj\Debug\testando.csproj.GenerateResource.cache
+C:\Users\cwb\source\repos\testando\obj\Debug\testando.csproj.CoreCompileInputs.cache
+C:\Users\cwb\source\repos\testando\obj\Debug\testando.exe
+C:\Users\cwb\source\repos\testando\obj\Debug\testando.pdb
+C:\Users\cwb\source\repos\testando\obj\Debug\testando.FrmCliente.resources
