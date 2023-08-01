@@ -40,6 +40,8 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.dtUsuario = new System.Windows.Forms.DataGridView();
             this.btnListarUsuario = new System.Windows.Forms.Button();
+            this.cboPerfil = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtUsuario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -149,11 +151,31 @@
             this.btnListarUsuario.UseVisualStyleBackColor = true;
             this.btnListarUsuario.Click += new System.EventHandler(this.btnListarUsuario_Click);
             // 
+            // cboPerfil
+            // 
+            this.cboPerfil.FormattingEnabled = true;
+            this.cboPerfil.Location = new System.Drawing.Point(85, 94);
+            this.cboPerfil.Name = "cboPerfil";
+            this.cboPerfil.Size = new System.Drawing.Size(121, 21);
+            this.cboPerfil.TabIndex = 12;
+            this.cboPerfil.SelectedIndexChanged += new System.EventHandler(this.cboPerfil_SelectedIndexChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(43, 94);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(33, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Perfil:";
+            // 
             // FrmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cboPerfil);
             this.Controls.Add(this.btnListarUsuario);
             this.Controls.Add(this.dtUsuario);
             this.Controls.Add(this.txtSenha);
@@ -189,5 +211,7 @@
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.DataGridView dtUsuario;
         private System.Windows.Forms.Button btnListarUsuario;
+        private System.Windows.Forms.ComboBox cboPerfil;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -15,6 +15,7 @@ namespace testando
     public partial class FrmUsuario : Form
     {
         int codigo;
+        int idperfil;//declaro o perfil publico
         public FrmUsuario()
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace testando
             UsuarioModelo usmodelo= new UsuarioModelo();
             usmodelo.nome = txtNome.Text;
             usmodelo.senha = txtSenha.Text;
-           
+            usmodelo.idperfil = idperfil;
             if( usmodelo.nome != "" && usmodelo.senha != "")
             {
                 if (controller.cadastrar(usmodelo) == true)
@@ -44,8 +45,10 @@ namespace testando
         private void FrmUsuario_Load(object sender, EventArgs e)
         {
             UsuarioController uscontroller= new UsuarioController();
-            dtUsuario.DataSource = uscontroller.obterdados("select * from usuario");
-            
+            dtUsuario.DataSource = uscontroller.obterdados("select usuario.idusuario,usuario.nome,usuario.senha,perfil.perfil from usuario inner join perfil on usuario.id_perfil=perfil.id_perfil;");
+            cboPerfil.DataSource = uscontroller.obterdados("select * from perfil");
+            cboPerfil.DisplayMember = "perfil";
+            cboPerfil.ValueMember = "id_perfil";
         }
 
         private void dtUsuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -96,6 +99,12 @@ namespace testando
             //instancio o novo formulario
             FrmListarUsuario frmListar = new FrmListarUsuario();
             frmListar.ShowDialog();//mostro o formulario listar
+        }
+
+        private void cboPerfil_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //variavel perfil convert para inteiro
+             idperfil = Convert.ToInt32(((DataRowView)cboPerfil.SelectedItem)["id_perfil"]);
         }
     }
 }

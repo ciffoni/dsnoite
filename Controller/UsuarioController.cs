@@ -16,8 +16,8 @@ namespace Controller
         public bool cadastrar( UsuarioModelo usuario)//passo o objeto usuario
         {//declaro a variavel da resposta da query
             bool resultado = false;
-            string sql = "insert into usuario(nome,senha) " +
-                "values('" + usuario.nome + "','" + usuario.senha + "')";
+            string sql = "insert into usuario(nome,senha,id_perfil) " +
+                "values('" + usuario.nome + "','" + usuario.senha + "',"+usuario.idperfil+")";
             //chamando minha conexao
             MySqlConnection sqlCon = con.getConexao();
             sqlCon.Open();//abrindo o banco
