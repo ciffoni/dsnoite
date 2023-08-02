@@ -57,6 +57,7 @@ namespace testando
             MessageBox.Show("Codigo " + codigo.ToString());
             txtNome.Text = dtUsuario.Rows[e.RowIndex].Cells["nome"].Value.ToString();
             txtSenha.Text = dtUsuario.Rows[e.RowIndex].Cells["senha"].Value.ToString();
+            cboPerfil.Text = dtUsuario.Rows[e.RowIndex].Cells["perfil"].Value.ToString();
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -83,6 +84,7 @@ namespace testando
             usmodelo.nome= txtNome.Text;
             usmodelo.senha = txtSenha.Text;
             usmodelo.idusuario = codigo;
+            usmodelo.idperfil = idperfil;
             if( uscontroler.editar(usmodelo) == true)
             {
                 MessageBox.Show("Usuario atualizado com sucesso");

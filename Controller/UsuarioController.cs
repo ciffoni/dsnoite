@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using Modelo;
 using System.Data;
+using System.Management;
 
 namespace Controller
 {
@@ -56,7 +57,7 @@ namespace Controller
         public bool editar(UsuarioModelo us)
         {
             bool resultado = false;
-            string sql = "update usuario set nome=@nome, senha=@senha where id_usuario=@id";
+            string sql = "update usuario set nome=@nome, senha=@senha,id_perfil=@perfil where id_usuario=@id";
             MySqlConnection sqlcon=con.getConexao();
             sqlcon.Open();
             MySqlCommand command = new MySqlCommand(sql, sqlcon);   
@@ -65,11 +66,35 @@ namespace Controller
             // substituindo a variavel @___ pelo conteudo do objeto
             command.Parameters.AddWithValue("@nome", us.nome);
             command.Parameters.AddWithValue("@senha", us.senha);
+            command.Parameters.AddWithValue("@idperfil", us.idperfil);
             command.Parameters.AddWithValue("@id", us.idusuario);
            if( command.ExecuteNonQuery()>=1)
                 resultado=true;
            sqlcon.Close();
             return resultado;
         }
+        public bool logar(UsuarioModelo us)
+        {//validar
+            try
+            {
+                bool resultado = false;
+                int registro;//retorna o numero de registro
+                string sql = "SELECT count(idusuario) from usuario where nome=@usuario and senha=@senha";
+                MySqlConnection sqlcon = con.getConexao();
+                sqlcon.Open();
+                MySqlCommand cmd = new MySqlCommand(sql, sqlcon);
+                cmd.Parameters.AddWithValue("@usuario", us.nome);
+                cmd.Parameters.AddWithValue("@senha", us.senha);
+                registro = Convert.ToInt32(cmd.ExecuteScalar());//retornar o valor
+                if(registro==1)
+                    resultado = true;
+               return resultado; 
+            }catch(Exception ex)
+            {
+               throw new Exception(ex.Message);
+            }
+            
+        }
     }
+    
 }
