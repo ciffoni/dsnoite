@@ -108,5 +108,10 @@ namespace testando
             //variavel perfil convert para inteiro
              idperfil = Convert.ToInt32(((DataRowView)cboPerfil.SelectedItem)["id_perfil"]);
         }
+
+        private void txtSenha_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(txtSenha, "Tamanho 8 caracter letras e numeros");
+        }
     }
 }

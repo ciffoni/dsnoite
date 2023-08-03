@@ -73,22 +73,44 @@ namespace Controller
            sqlcon.Close();
             return resultado;
         }
-        public bool logar(UsuarioModelo us)
+        //metodo para carregar o usuario
+        public UsuarioModelo CarregaUsuario(int codigo)
+        {
+            UsuarioModelo us = new UsuarioModelo();
+            MySqlConnection sqlcon = con.getConexao();
+            sqlcon.Open();
+            string sql = "SELECT * from usuario where idusuario=@id";
+            MySqlCommand cmd = new MySqlCommand(sql, sqlcon);
+            cmd.Parameters.AddWithValue("@id", codigo);//substituo o valor do codigo
+            MySqlDataReader registro=cmd.ExecuteReader();//leia os dados da consulta
+            if(registro.HasRows)//existe linha de registro
+            {
+                registro.Read();//leia o registro
+                //gravando as informações no modelo usuario
+                us.nome = registro["nome"].ToString();
+                us.senha = registro["senha"].ToString();
+                us.idusuario = Convert.ToInt32(registro["idusuario"]);
+                us.idperfil = Convert.ToInt32(registro["id_perfil"]);
+            }
+            sqlcon.Close();
+            return us;
+        }
+        //finaliza o metodo
+        public int logar(UsuarioModelo us)
         {//validar
             try
             {
-                bool resultado = false;
-                int registro;//retorna o numero de registro
-                string sql = "SELECT count(idusuario) from usuario where nome=@usuario and senha=@senha";
+               
+                int registro=0;//retorna o numero de registro
+                string sql = "SELECT idusuario from usuario where nome=@usuario and senha=@senha";
                 MySqlConnection sqlcon = con.getConexao();
                 sqlcon.Open();
                 MySqlCommand cmd = new MySqlCommand(sql, sqlcon);
                 cmd.Parameters.AddWithValue("@usuario", us.nome);
                 cmd.Parameters.AddWithValue("@senha", us.senha);
                 registro = Convert.ToInt32(cmd.ExecuteScalar());//retornar o valor
-                if(registro==1)
-                    resultado = true;
-               return resultado; 
+               
+               return registro; //devolvo o ID do usuário
             }catch(Exception ex)
             {
                throw new Exception(ex.Message);

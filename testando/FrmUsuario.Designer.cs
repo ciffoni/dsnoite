@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -42,6 +43,7 @@
             this.btnListarUsuario = new System.Windows.Forms.Button();
             this.cboPerfil = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dtUsuario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,8 +131,10 @@
             // 
             this.txtSenha.Location = new System.Drawing.Point(85, 67);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(100, 20);
             this.txtSenha.TabIndex = 9;
+            this.txtSenha.MouseHover += new System.EventHandler(this.txtSenha_MouseHover);
             // 
             // dtUsuario
             // 
@@ -213,5 +217,6 @@
         private System.Windows.Forms.Button btnListarUsuario;
         private System.Windows.Forms.ComboBox cboPerfil;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
