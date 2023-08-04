@@ -57,5 +57,27 @@ namespace testando
                 usuárioToolStripMenuItem.Visible = true;
             }
         }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            //result guarda a resposta do botao
+           var result= MessageBox.Show("Deseja sair do sistema?","Sair do sistema",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+           if(result == DialogResult.Yes)
+            {
+                this.Close();
+                FrmLogn login = new FrmLogn();
+              login.ShowDialog();
+               
+            }
+           
+          
+               
+        }
+
+        private void FrmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
     }
 }

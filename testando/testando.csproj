@@ -124,6 +124,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmListarUsuario.resx">
+      <DependentUpon>FrmListarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogn.resx">
       <DependentUpon>FrmLogn.cs</DependentUpon>
     </EmbeddedResource>

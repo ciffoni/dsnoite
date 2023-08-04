@@ -49,7 +49,7 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(43, 134);
+            this.btnCadastrar.Location = new System.Drawing.Point(46, 172);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 0;
@@ -59,7 +59,7 @@
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(43, 164);
+            this.btnAtualizar.Location = new System.Drawing.Point(46, 202);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(75, 23);
             this.btnAtualizar.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(124, 134);
+            this.btnExcluir.Location = new System.Drawing.Point(127, 172);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
             this.btnExcluir.TabIndex = 2;
@@ -79,7 +79,7 @@
             // 
             // btnConectar
             // 
-            this.btnConectar.Location = new System.Drawing.Point(124, 164);
+            this.btnConectar.Location = new System.Drawing.Point(127, 202);
             this.btnConectar.Name = "btnConectar";
             this.btnConectar.Size = new System.Drawing.Size(75, 23);
             this.btnConectar.TabIndex = 3;
@@ -139,15 +139,15 @@
             // dtUsuario
             // 
             this.dtUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtUsuario.Location = new System.Drawing.Point(245, 67);
+            this.dtUsuario.Location = new System.Drawing.Point(245, 40);
             this.dtUsuario.Name = "dtUsuario";
-            this.dtUsuario.Size = new System.Drawing.Size(266, 148);
+            this.dtUsuario.Size = new System.Drawing.Size(360, 175);
             this.dtUsuario.TabIndex = 10;
             this.dtUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtUsuario_CellContentClick);
             // 
             // btnListarUsuario
             // 
-            this.btnListarUsuario.Location = new System.Drawing.Point(46, 223);
+            this.btnListarUsuario.Location = new System.Drawing.Point(49, 261);
             this.btnListarUsuario.Name = "btnListarUsuario";
             this.btnListarUsuario.Size = new System.Drawing.Size(75, 23);
             this.btnListarUsuario.TabIndex = 11;
