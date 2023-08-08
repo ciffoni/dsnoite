@@ -63,5 +63,13 @@ namespace testando
         {
             Application.ExitThread();
         }
+
+        private void txtSenha_Enter(object sender, EventArgs e)
+        {
+           // if (Keys.Enter)
+           // {
+
+           // }
+        }
     }
 }

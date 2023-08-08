@@ -108,3 +108,6 @@ C:\Users\aluno\Documents\GitHub\dsnoite\testando\obj\Debug\testando.pdb
 C:\Users\aluno\Documents\GitHub\dsnoite\testando\obj\Debug\testando.FrmPrincipal.resources
 C:\Users\aluno\Documents\GitHub\dsnoite\testando\obj\Debug\testando.FrmLogn.resources
 C:\Users\aluno\Documents\GitHub\dsnoite\testando\obj\Debug\testando.FrmListarUsuario.resources
+C:\Users\aluno\Documents\GitHub\dsnoite\testando\bin\Debug\PdfSharp.dll
+C:\Users\aluno\Documents\GitHub\dsnoite\testando\bin\Debug\PdfSharp.xml
+C:\Users\aluno\Documents\GitHub\dsnoite\testando\bin\Debug\de\PdfSharp.resources.dll

@@ -78,6 +78,7 @@
             this.btnImprmir.TabIndex = 4;
             this.btnImprmir.Text = "Imprimir";
             this.btnImprmir.UseVisualStyleBackColor = true;
+            this.btnImprmir.Click += new System.EventHandler(this.btnImprmir_Click);
             // 
             // FrmListarUsuario
             // 

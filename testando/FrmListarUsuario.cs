@@ -55,5 +55,12 @@ namespace testando
             dtUsuario.DataSource = uscontroller.obterdados(sql);
 
         }
+
+        private void btnImprmir_Click(object sender, EventArgs e)
+        {
+            //chama o controle usuario e metodo gerarPdf pasando o sql
+            uscontroller.gerarPDF(sql);
+
+        }
     }
 }

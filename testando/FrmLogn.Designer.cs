@@ -41,7 +41,7 @@
             this.btnLogin.Location = new System.Drawing.Point(36, 135);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 0;
+            this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Logar";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -51,7 +51,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(153, 135);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 1;
+            this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -79,7 +79,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(90, 33);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(186, 20);
-            this.txtUsuario.TabIndex = 4;
+            this.txtUsuario.TabIndex = 0;
             // 
             // txtSenha
             // 
@@ -87,7 +87,8 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(186, 20);
-            this.txtSenha.TabIndex = 5;
+            this.txtSenha.TabIndex = 4;
+            this.txtSenha.Enter += new System.EventHandler(this.txtSenha_Enter);
             // 
             // FrmLogn
             // 
