@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 01-Ago-2023 às 03:16
+-- Tempo de geração: 09-Ago-2023 às 03:25
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -47,6 +47,23 @@ INSERT INTO `perfil` (`id_perfil`, `perfil`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `produto`
+--
+
+DROP TABLE IF EXISTS `produto`;
+CREATE TABLE `produto` (
+  `cod_prod` int(4) NOT NULL,
+  `desc_prod` varchar(60) DEFAULT NULL,
+  `preco_prod` decimal(7,2) DEFAULT NULL,
+  `qtde_prod` int(11) DEFAULT NULL,
+  `perecivel` tinyint(1) DEFAULT NULL,
+  `dat_validade` date DEFAULT NULL,
+  `foto` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `usuario`
 --
 
@@ -77,6 +94,12 @@ ALTER TABLE `perfil`
   ADD PRIMARY KEY (`id_perfil`);
 
 --
+-- Índices para tabela `produto`
+--
+ALTER TABLE `produto`
+  ADD PRIMARY KEY (`cod_prod`);
+
+--
 -- Índices para tabela `usuario`
 --
 ALTER TABLE `usuario`
@@ -92,6 +115,12 @@ ALTER TABLE `usuario`
 --
 ALTER TABLE `perfil`
   MODIFY `id_perfil` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT de tabela `produto`
+--
+ALTER TABLE `produto`
+  MODIFY `cod_prod` int(4) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
