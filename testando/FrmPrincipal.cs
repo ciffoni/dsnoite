@@ -79,5 +79,13 @@ namespace testando
         {
             Close();
         }
+
+        private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //chamar o produto
+            FrmProduto prod = new FrmProduto();
+            prod.MdiParent = this;//integrar a janela
+            prod.Show();//mostrar a tela
+        }
     }
 }
