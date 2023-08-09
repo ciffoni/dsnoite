@@ -111,3 +111,4 @@ C:\Users\aluno\Documents\GitHub\dsnoite\testando\obj\Debug\testando.FrmListarUsu
 C:\Users\aluno\Documents\GitHub\dsnoite\testando\bin\Debug\PdfSharp.dll
 C:\Users\aluno\Documents\GitHub\dsnoite\testando\bin\Debug\PdfSharp.xml
 C:\Users\aluno\Documents\GitHub\dsnoite\testando\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\aluno\Documents\GitHub\dsnoite\testando\obj\Debug\testando.FrmProduto.resources

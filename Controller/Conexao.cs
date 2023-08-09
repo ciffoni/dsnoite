@@ -28,7 +28,7 @@ namespace Controller
             return conexao;//retorno o valor da conexao
 
         }
-        public int cadastrar(string[] campos, string[] valores, string sql)
+        public int cadastrar(string[] campos, object[] valores, string sql)
         {
             int registro = 0;
             try//testa o cadastro
