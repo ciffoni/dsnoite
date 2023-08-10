@@ -87,7 +87,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(186, 20);
-            this.txtSenha.TabIndex = 4;
+            this.txtSenha.TabIndex = 1;
             this.txtSenha.Enter += new System.EventHandler(this.txtSenha_Enter);
             // 
             // FrmLogn
