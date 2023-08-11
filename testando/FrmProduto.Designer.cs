@@ -43,14 +43,14 @@
             this.btnInserir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtProduto = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.lblFoto = new System.Windows.Forms.Label();
             this.btnFoto = new System.Windows.Forms.Button();
+            this.lblFoto = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.ptbfoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtProduto)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -59,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 9);
+            this.label1.Location = new System.Drawing.Point(65, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 0;
@@ -68,7 +68,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 41);
+            this.label2.Location = new System.Drawing.Point(65, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 1;
@@ -77,7 +77,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(62, 63);
+            this.label3.Location = new System.Drawing.Point(65, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 2;
@@ -86,7 +86,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(62, 109);
+            this.label4.Location = new System.Drawing.Point(65, 207);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 3;
@@ -94,28 +94,28 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(152, 2);
+            this.txtCodigo.Location = new System.Drawing.Point(155, 100);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
             this.txtCodigo.TabIndex = 4;
             // 
             // txtDescricao
             // 
-            this.txtDescricao.Location = new System.Drawing.Point(152, 34);
+            this.txtDescricao.Location = new System.Drawing.Point(155, 132);
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(100, 20);
             this.txtDescricao.TabIndex = 5;
             // 
             // txtPreco
             // 
-            this.txtPreco.Location = new System.Drawing.Point(152, 67);
+            this.txtPreco.Location = new System.Drawing.Point(155, 165);
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.Size = new System.Drawing.Size(100, 20);
             this.txtPreco.TabIndex = 6;
             // 
             // txtQuantidade
             // 
-            this.txtQuantidade.Location = new System.Drawing.Point(152, 101);
+            this.txtQuantidade.Location = new System.Drawing.Point(155, 199);
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(100, 20);
             this.txtQuantidade.TabIndex = 7;
@@ -124,7 +124,7 @@
             // chkData
             // 
             this.chkData.AutoSize = true;
-            this.chkData.Location = new System.Drawing.Point(152, 144);
+            this.chkData.Location = new System.Drawing.Point(155, 242);
             this.chkData.Name = "chkData";
             this.chkData.Size = new System.Drawing.Size(109, 17);
             this.chkData.TabIndex = 8;
@@ -134,7 +134,7 @@
             // 
             // data_validade
             // 
-            this.data_validade.Location = new System.Drawing.Point(152, 174);
+            this.data_validade.Location = new System.Drawing.Point(155, 272);
             this.data_validade.Name = "data_validade";
             this.data_validade.Size = new System.Drawing.Size(200, 20);
             this.data_validade.TabIndex = 9;
@@ -143,7 +143,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(62, 180);
+            this.label5.Location = new System.Drawing.Point(65, 278);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 13);
             this.label5.TabIndex = 10;
@@ -152,15 +152,16 @@
             // 
             // ptbfoto
             // 
-            this.ptbfoto.Location = new System.Drawing.Point(382, 20);
+            this.ptbfoto.Location = new System.Drawing.Point(344, 91);
             this.ptbfoto.Name = "ptbfoto";
-            this.ptbfoto.Size = new System.Drawing.Size(180, 141);
+            this.ptbfoto.Size = new System.Drawing.Size(276, 168);
+            this.ptbfoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbfoto.TabIndex = 11;
             this.ptbfoto.TabStop = false;
             // 
             // btnInserir
             // 
-            this.btnInserir.Location = new System.Drawing.Point(126, 242);
+            this.btnInserir.Location = new System.Drawing.Point(129, 340);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(75, 23);
             this.btnInserir.TabIndex = 13;
@@ -170,7 +171,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(309, 242);
+            this.btnEditar.Location = new System.Drawing.Point(312, 340);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 23);
             this.btnEditar.TabIndex = 14;
@@ -180,20 +181,21 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(216, 226);
+            this.btnExcluir.Location = new System.Drawing.Point(224, 333);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
             this.btnExcluir.TabIndex = 15;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
-            // dataGridView1
+            // dtProduto
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(216, 32);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 17;
+            this.dtProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtProduto.Location = new System.Drawing.Point(66, 32);
+            this.dtProduto.Name = "dtProduto";
+            this.dtProduto.Size = new System.Drawing.Size(571, 271);
+            this.dtProduto.TabIndex = 17;
             // 
             // tabControl1
             // 
@@ -231,9 +233,28 @@
             this.tabPage1.Text = "Cadastro";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // btnFoto
+            // 
+            this.btnFoto.Location = new System.Drawing.Point(518, 340);
+            this.btnFoto.Name = "btnFoto";
+            this.btnFoto.Size = new System.Drawing.Size(75, 23);
+            this.btnFoto.TabIndex = 17;
+            this.btnFoto.Text = "Inserir Foto";
+            this.btnFoto.UseVisualStyleBackColor = true;
+            this.btnFoto.Click += new System.EventHandler(this.btnFoto_Click_1);
+            // 
+            // lblFoto
+            // 
+            this.lblFoto.AutoSize = true;
+            this.lblFoto.Location = new System.Drawing.Point(391, 279);
+            this.lblFoto.Name = "lblFoto";
+            this.lblFoto.Size = new System.Drawing.Size(35, 13);
+            this.lblFoto.TabIndex = 16;
+            this.lblFoto.Text = "label6";
+            // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Controls.Add(this.dtProduto);
             this.tabPage2.Controls.Add(this.btnExcluir);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -243,24 +264,6 @@
             this.tabPage2.Text = "Listar";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // lblFoto
-            // 
-            this.lblFoto.AutoSize = true;
-            this.lblFoto.Location = new System.Drawing.Point(388, 181);
-            this.lblFoto.Name = "lblFoto";
-            this.lblFoto.Size = new System.Drawing.Size(35, 13);
-            this.lblFoto.TabIndex = 16;
-            this.lblFoto.Text = "label6";
-            // 
-            // btnFoto
-            // 
-            this.btnFoto.Location = new System.Drawing.Point(515, 242);
-            this.btnFoto.Name = "btnFoto";
-            this.btnFoto.Size = new System.Drawing.Size(75, 23);
-            this.btnFoto.TabIndex = 17;
-            this.btnFoto.Text = "Inserir Foto";
-            this.btnFoto.UseVisualStyleBackColor = true;
-            // 
             // FrmProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -269,8 +272,9 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "FrmProduto";
             this.Text = "Cadastro de Produto";
+            this.Load += new System.EventHandler(this.FrmProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptbfoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtProduto)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -296,7 +300,7 @@
         private System.Windows.Forms.Button btnInserir;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtProduto;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button btnFoto;

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Net.Mail;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -29,7 +31,7 @@ namespace Controller
             return conexao;//retorno o valor da conexao
 
         }
-        public int cadastrar(string[] campos, object[] valores, string sql)
+        public int cadastrar(int codigo,string[] campos, object[] valores, string sql)
         {
             int registro = 0;
             try//testa o cadastro
@@ -42,6 +44,10 @@ namespace Controller
                 for (int i = 0; i < valores.Length; i++)
                 {
                     cmd.Parameters.AddWithValue(campos[i], valores[i]);
+                }
+                if (codigo > 0)
+                {
+                    cmd.Parameters.AddWithValue("@id", codigo);
                 }
                 registro = cmd.ExecuteNonQuery();
                 conn.Close();
@@ -59,6 +65,17 @@ namespace Controller
             int registro = 0;
 
             return registro;
+
+        }
+        public DataTable obterdados(string sql)
+        {
+            DataTable dt = new DataTable();
+            MySqlConnection sqlCon = getConexao();
+            sqlCon.Open();//abrindo o banco
+            MySqlCommand cmd = new MySqlCommand(sql, sqlCon);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+            adapter.Fill(dt);
+            return dt;
 
         }
     }
