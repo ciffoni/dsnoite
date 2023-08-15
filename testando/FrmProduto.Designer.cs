@@ -49,6 +49,9 @@
             this.btnFoto = new System.Windows.Forms.Button();
             this.lblFoto = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtProduto = new System.Windows.Forms.TextBox();
+            this.btnPesquisarProduto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ptbfoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtProduto)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -181,7 +184,7 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(224, 333);
+            this.btnExcluir.Location = new System.Drawing.Point(220, 374);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
             this.btnExcluir.TabIndex = 15;
@@ -192,10 +195,11 @@
             // dtProduto
             // 
             this.dtProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtProduto.Location = new System.Drawing.Point(66, 32);
+            this.dtProduto.Location = new System.Drawing.Point(63, 56);
             this.dtProduto.Name = "dtProduto";
             this.dtProduto.Size = new System.Drawing.Size(571, 271);
             this.dtProduto.TabIndex = 17;
+            this.dtProduto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtProduto_CellClick);
             // 
             // tabControl1
             // 
@@ -254,6 +258,9 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnPesquisarProduto);
+            this.tabPage2.Controls.Add(this.txtProduto);
+            this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.dtProduto);
             this.tabPage2.Controls.Add(this.btnExcluir);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -263,6 +270,31 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Listar";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(14, 21);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 13);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Digite o produto:";
+            // 
+            // txtProduto
+            // 
+            this.txtProduto.Location = new System.Drawing.Point(105, 18);
+            this.txtProduto.Name = "txtProduto";
+            this.txtProduto.Size = new System.Drawing.Size(214, 20);
+            this.txtProduto.TabIndex = 19;
+            // 
+            // btnPesquisarProduto
+            // 
+            this.btnPesquisarProduto.Location = new System.Drawing.Point(344, 13);
+            this.btnPesquisarProduto.Name = "btnPesquisarProduto";
+            this.btnPesquisarProduto.Size = new System.Drawing.Size(75, 23);
+            this.btnPesquisarProduto.TabIndex = 20;
+            this.btnPesquisarProduto.Text = "Pesquisar";
+            this.btnPesquisarProduto.UseVisualStyleBackColor = true;
             // 
             // FrmProduto
             // 
@@ -279,6 +311,7 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -306,5 +339,8 @@
         private System.Windows.Forms.Button btnFoto;
         private System.Windows.Forms.Label lblFoto;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button btnPesquisarProduto;
+        private System.Windows.Forms.TextBox txtProduto;
+        private System.Windows.Forms.Label label6;
     }
 }
