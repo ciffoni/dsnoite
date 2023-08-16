@@ -57,14 +57,15 @@ namespace testando
                 descproduto.Location=new Point(20, 55);
                 TextBox qtde = new TextBox();
                 qtde.Name = "qtde";
-                qtde.Location = new Point(20, 110);
+                qtde.Location = new Point(20, 120);
                 //adicionando os componentes ao painel
                 Button registrar = new Button();
                 registrar.Name = "Selecionar";
                 registrar.Text = "Selecionar";
                 registrar.Font=new Font("Arial",8,FontStyle.Bold);
                 registrar.Click += new EventHandler((sender1, e1) => SelecionarClick(sender1, e1, idproduto.Text));
-                registrar.Location = new Point(20, 120);
+                registrar.Location = new Point(20, 150);
+
                 produto.Controls.Add(descproduto);
                 produto.Controls.Add(preco);
                 produto.Controls.Add(foto);
