@@ -16,7 +16,8 @@ namespace testando
         //instancio o objeto produto
         ProdutoModelo pmodelo = new ProdutoModelo();
         ProdutoController pController = new ProdutoController();
-        Conexao com = new Conexao();
+        int codigoProduto;//identificar qual codigo
+        Conexao com = new Conexao();//chama a classe conexão
         public FrmProduto()
         {
             InitializeComponent();
@@ -137,7 +138,7 @@ namespace testando
         {
             try
             {
-                pmodelo.codigo = Convert.ToInt32(txtCodigo.Text);
+                //pmodelo.codigo = Convert.ToInt32(txtCodigo.Text);
 
                 if (string.IsNullOrEmpty(pmodelo.codigo.ToString()))
                 {
@@ -166,7 +167,27 @@ namespace testando
 
         private void FrmProduto_Load(object sender, EventArgs e)
         {
+            //visualizar o caminho da consulta
             dtProduto.DataSource = com.obterdados("Select * from produto");
+        }
+
+        private void dtProduto_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            pmodelo.codigo = Convert.ToInt32(dtProduto.Rows[e.RowIndex].Cells[0].Value);
+            txtCodigo.Text = pmodelo.codigo.ToString();
+            txtDescricao.Text = dtProduto.Rows[e.RowIndex].Cells[1].Value.ToString(); 
+            txtPreco.Text= dtProduto.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtQuantidade.Text= dtProduto.Rows[e.RowIndex].Cells[3].Value.ToString();
+            if (Convert.ToInt32(dtProduto.Rows[e.RowIndex].Cells[4].Value) == 1)
+            {
+                chkData.Checked = true;
+            }
+            else
+            {
+                chkData.Checked = false;
+            }
+            data_validade.Value = Convert.ToDateTime(dtProduto.Rows[e.RowIndex].Cells[5].Value);
+            ptbfoto.Image =Image.FromFile(dtProduto.Rows[e.RowIndex].Cells[6].Value.ToString());
         }
     }
 }
