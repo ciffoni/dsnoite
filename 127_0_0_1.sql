@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15-Ago-2023 às 03:17
+-- Tempo de geração: 17-Ago-2023 às 03:08
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -66,7 +66,7 @@ CREATE TABLE `produto` (
 --
 
 INSERT INTO `produto` (`cod_prod`, `desc_prod`, `preco_prod`, `qtde_prod`, `perecivel`, `dat_validade`, `foto`) VALUES
-(1, 'Coca cola 500 ml', '6.70', 200, 0, '2023-08-14', 'C:\\Users\\aluno\\Documents\\GitHub\\dsnoite\\produto\\cocacola500ml.jpg');
+(1, 'Coca cola 500 ml', '6.70', 1, 0, '2023-08-14', 'C:\\Users\\aluno\\Documents\\GitHub\\dsnoite\\produto\\cocacola500ml.jpg');
 
 -- --------------------------------------------------------
 

@@ -27,6 +27,7 @@ namespace testando
             dt = com.obterdados("select * from produto");
             int registros;//ler a quantidade de dados
             int x = 0, y = 0;//posição da tela
+            int qtdeproduto;//guardar a quantidade de item produto 
             //varrer os registros da table produto
             for (registros = 0; registros < dt.Rows.Count; registros++)
             {
@@ -57,15 +58,29 @@ namespace testando
                 descproduto.Location=new Point(20, 55);
                 TextBox qtde = new TextBox();
                 qtde.Name = "qtde";
+                qtdeproduto= Convert.ToInt32(dt.Rows[registros][3].ToString());
+                qtde.Leave += new EventHandler((sender1, e1) => QtdeLeave(sender1, e1, qtde.Text, qtdeproduto)); 
+
+                if (qtdeproduto > 0)
+                    {
+                        qtde.Enabled = true;
+                    }
+                    else
+                    {
+                        qtde.Enabled = false;
+                    }
+                
                 qtde.Location = new Point(20, 120);
                 //adicionando os componentes ao painel
                 Button registrar = new Button();
                 registrar.Name = "Selecionar";
                 registrar.Text = "Selecionar";
+                //defino a fonte arial tamnho 8 e negrito
                 registrar.Font=new Font("Arial",8,FontStyle.Bold);
+                //chamo o evento click do botao
                 registrar.Click += new EventHandler((sender1, e1) => SelecionarClick(sender1, e1, idproduto.Text));
                 registrar.Location = new Point(20, 150);
-
+                //mostrar o item na tela
                 produto.Controls.Add(descproduto);
                 produto.Controls.Add(preco);
                 produto.Controls.Add(foto);
@@ -83,9 +98,21 @@ namespace testando
             }
 
         }
+
+
         private void SelecionarClick(object sender,EventArgs e,string Id)
         {
             MessageBox.Show("Produto selecionado" + Id);
+        }
+        private void QtdeLeave(object sender,EventArgs e,string qtde,int qtdeprod)
+        {
+            if (!string.IsNullOrEmpty(qtde))
+            {
+                if (Convert.ToInt32(qtde) > qtdeprod || Convert.ToInt32(qtde)<=0)
+                {
+                    MessageBox.Show("Quantidade indisponivel", "Alerta");
+                }
+            }
         }
     }
 }
