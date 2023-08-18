@@ -50,6 +50,8 @@ C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\K4os.Hash.xxHash.dl
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\Modelo.dll
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\MySql.Data.dll
+C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\PdfSharp.Charting.dll
+C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\PdfSharp.dll
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\System.Buffers.dll
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\System.Configuration.ConfigurationManager.dll
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\System.Diagnostics.DiagnosticSource.dll
@@ -68,6 +70,8 @@ C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\K4os.Compression.LZ
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\K4os.Hash.xxHash.xml
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\MySql.Data.xml
+C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\PdfSharp.xml
+C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\PdfSharp.Charting.xml
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\System.Buffers.xml
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\System.IO.Pipelines.xml
@@ -75,14 +79,10 @@ C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\System.Memory.xml
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\de\PdfSharp.Charting.resources.dll
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\obj\Debug\Controller.csproj.AssemblyReference.cache
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\obj\Debug\Controller.csproj.CopyComplete
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\obj\Debug\Controller.dll
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\obj\Debug\Controller.pdb
-C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\PdfSharp.Charting.dll
-C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\PdfSharp.dll
-C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\PdfSharp.xml
-C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\PdfSharp.Charting.xml
-C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\de\PdfSharp.resources.dll
-C:\Users\aluno\Documents\GitHub\dsnoite\Controller\bin\Debug\de\PdfSharp.Charting.resources.dll
