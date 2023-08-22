@@ -78,5 +78,17 @@ namespace Controller
             return dt;
 
         }
+        public string getMD5Hash(string senha)
+        {
+            System.Security.Cryptography.MD5 md5=System.Security.Cryptography.MD5.Create();
+            byte[] inputBytes= System.Text.Encoding.ASCII.GetBytes(senha);
+            byte[] hash=md5.ComputeHash(inputBytes);
+            StringBuilder sb=new StringBuilder();
+            for(int i=0; i<hash.Length; i++)
+            {
+                sb.Append(hash[i].ToString("x2"));
+            }
+            return sb.ToString();
+        }
     }
 }

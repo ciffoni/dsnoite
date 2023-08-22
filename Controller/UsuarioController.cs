@@ -22,7 +22,7 @@ namespace Controller
         {//declaro a variavel da resposta da query
             bool resultado = false;
             string sql = "insert into usuario(nome,senha,id_perfil) " +
-                "values('" + usuario.nome + "','" + usuario.senha + "',"+usuario.idperfil+")";
+                "values('" + usuario.nome + "','" + con.getMD5Hash(usuario.senha) + "',"+usuario.idperfil+")";
             //chamando minha conexao
             MySqlConnection sqlCon = con.getConexao();
             sqlCon.Open();//abrindo o banco
@@ -61,7 +61,7 @@ namespace Controller
         public bool editar(UsuarioModelo us)
         {
             bool resultado = false;
-            string sql = "update usuario set nome=@nome, senha=@senha,id_perfil=@perfil where id_usuario=@id";
+            string sql = "update usuario set nome=@nome, senha=@senha,id_perfil=@perfil where idusuario=@id";
             MySqlConnection sqlcon=con.getConexao();
             sqlcon.Open();
             MySqlCommand command = new MySqlCommand(sql, sqlcon);   
@@ -69,8 +69,8 @@ namespace Controller
             command.CommandText = sql;
             // substituindo a variavel @___ pelo conteudo do objeto
             command.Parameters.AddWithValue("@nome", us.nome);
-            command.Parameters.AddWithValue("@senha", us.senha);
-            command.Parameters.AddWithValue("@idperfil", us.idperfil);
+            command.Parameters.AddWithValue("@senha",con.getMD5Hash(us.senha));
+            command.Parameters.AddWithValue("@perfil", us.idperfil);
             command.Parameters.AddWithValue("@id", us.idusuario);
            if( command.ExecuteNonQuery()>=1)
                 resultado=true;
@@ -111,7 +111,7 @@ namespace Controller
                 sqlcon.Open();
                 MySqlCommand cmd = new MySqlCommand(sql, sqlcon);
                 cmd.Parameters.AddWithValue("@usuario", us.nome);
-                cmd.Parameters.AddWithValue("@senha", us.senha);
+                cmd.Parameters.AddWithValue("@senha",con.getMD5Hash(us.senha));
                 registro = Convert.ToInt32(cmd.ExecuteScalar());//retornar o valor
                
                return registro; //devolvo o ID do usuário

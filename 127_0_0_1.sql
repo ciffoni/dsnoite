@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 17-Ago-2023 às 03:08
+-- Tempo de geração: 22-Ago-2023 às 03:29
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -87,7 +87,7 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`idusuario`, `nome`, `senha`, `id_perfil`) VALUES
-(2, 'ciffoni', 'aula123', 1),
+(2, 'ciffoni', '455371f0025c35ffe66b80dc21d05304', 2),
 (3, 'amanda', 'a123', 2);
 
 --
