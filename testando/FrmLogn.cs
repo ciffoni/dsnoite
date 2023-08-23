@@ -71,5 +71,12 @@ namespace testando
 
            // }
         }
+
+        private void btnRecuperarSenha_Click(object sender, EventArgs e)
+        {
+            Conexao com= new Conexao();
+          lblMensagem.Text= com.recuperaremail(txtUsuario.Text);
+
+        }
     }
 }

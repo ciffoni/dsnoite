@@ -14,11 +14,13 @@ namespace Modelo
        public string nome;
        public string senha;
         public int idperfil;//inclui o perfil usuario
+        public string email;
         //construtor da classe modelo usuario
         public UsuarioModelo() {
         nome = null;
             senha= null;
             idperfil = 0;//inicializo com 0
+            email= null;
         }
     }
 }

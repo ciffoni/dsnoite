@@ -21,8 +21,9 @@ namespace Controller
         public bool cadastrar( UsuarioModelo usuario)//passo o objeto usuario
         {//declaro a variavel da resposta da query
             bool resultado = false;
-            string sql = "insert into usuario(nome,senha,id_perfil) " +
-                "values('" + usuario.nome + "','" + con.getMD5Hash(usuario.senha) + "',"+usuario.idperfil+")";
+            string sql = "insert into usuario(nome,senha,id_perfil,email) " +
+                "values('" + usuario.nome + "','" + con.getMD5Hash(usuario.senha) + "'" +
+                ","+usuario.idperfil+",'"+usuario.email+"')";
             //chamando minha conexao
             MySqlConnection sqlCon = con.getConexao();
             sqlCon.Open();//abrindo o banco
@@ -61,7 +62,7 @@ namespace Controller
         public bool editar(UsuarioModelo us)
         {
             bool resultado = false;
-            string sql = "update usuario set nome=@nome, senha=@senha,id_perfil=@perfil where idusuario=@id";
+            string sql = "update usuario set nome=@nome, senha=@senha,id_perfil=@perfil,email=@email where idusuario=@id";
             MySqlConnection sqlcon=con.getConexao();
             sqlcon.Open();
             MySqlCommand command = new MySqlCommand(sql, sqlcon);   
@@ -71,6 +72,7 @@ namespace Controller
             command.Parameters.AddWithValue("@nome", us.nome);
             command.Parameters.AddWithValue("@senha",con.getMD5Hash(us.senha));
             command.Parameters.AddWithValue("@perfil", us.idperfil);
+            command.Parameters.AddWithValue("@email",us.email);
             command.Parameters.AddWithValue("@id", us.idusuario);
            if( command.ExecuteNonQuery()>=1)
                 resultado=true;
@@ -93,6 +95,7 @@ namespace Controller
                 //gravando as informações no modelo usuario
                 us.nome = registro["nome"].ToString();
                 us.senha = registro["senha"].ToString();
+                us.email= registro["email"].ToString(); 
                 us.idusuario = Convert.ToInt32(registro["idusuario"]);
                 us.idperfil = Convert.ToInt32(registro["id_perfil"]);
             }

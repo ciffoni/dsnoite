@@ -36,14 +36,16 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnRecuperarSenha = new System.Windows.Forms.Button();
+            this.lblMensagem = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(38, 187);
+            this.btnLogin.Location = new System.Drawing.Point(38, 175);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.Size = new System.Drawing.Size(75, 35);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Logar";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -51,9 +53,9 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(155, 187);
+            this.btnCancelar.Location = new System.Drawing.Point(121, 175);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(75, 35);
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -103,11 +105,31 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // btnRecuperarSenha
+            // 
+            this.btnRecuperarSenha.Location = new System.Drawing.Point(202, 175);
+            this.btnRecuperarSenha.Name = "btnRecuperarSenha";
+            this.btnRecuperarSenha.Size = new System.Drawing.Size(75, 35);
+            this.btnRecuperarSenha.TabIndex = 5;
+            this.btnRecuperarSenha.Text = "recuperar senha";
+            this.btnRecuperarSenha.UseVisualStyleBackColor = true;
+            this.btnRecuperarSenha.Click += new System.EventHandler(this.btnRecuperarSenha_Click);
+            // 
+            // lblMensagem
+            // 
+            this.lblMensagem.AutoSize = true;
+            this.lblMensagem.Location = new System.Drawing.Point(41, 159);
+            this.lblMensagem.Name = "lblMensagem";
+            this.lblMensagem.Size = new System.Drawing.Size(0, 13);
+            this.lblMensagem.TabIndex = 6;
+            // 
             // FrmLogn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 215);
+            this.Controls.Add(this.lblMensagem);
+            this.Controls.Add(this.btnRecuperarSenha);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtUsuario);
@@ -135,5 +157,7 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnRecuperarSenha;
+        private System.Windows.Forms.Label lblMensagem;
     }
 }

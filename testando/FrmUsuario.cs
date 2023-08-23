@@ -28,6 +28,7 @@ namespace testando
             usmodelo.nome = txtNome.Text;
             usmodelo.senha = txtSenha.Text;
             usmodelo.idperfil = idperfil;
+            usmodelo.email=txtEmail.Text;
             if( usmodelo.nome != "" && usmodelo.senha != "")
             {
                 if (controller.cadastrar(usmodelo) == true)
@@ -45,7 +46,7 @@ namespace testando
         private void FrmUsuario_Load(object sender, EventArgs e)
         {
             UsuarioController uscontroller= new UsuarioController();
-            dtUsuario.DataSource = uscontroller.obterdados("select usuario.idusuario,usuario.nome,usuario.senha,perfil.perfil from usuario inner join perfil on usuario.id_perfil=perfil.id_perfil;");
+            dtUsuario.DataSource = uscontroller.obterdados("select usuario.idusuario,usuario.nome,usuario.senha,perfil.perfil,usuario.email from usuario inner join perfil on usuario.id_perfil=perfil.id_perfil;");
             cboPerfil.DataSource = uscontroller.obterdados("select * from perfil");
             cboPerfil.DisplayMember = "perfil";
             cboPerfil.ValueMember = "id_perfil";
@@ -57,6 +58,7 @@ namespace testando
             MessageBox.Show("Codigo " + codigo.ToString());
             txtNome.Text = dtUsuario.Rows[e.RowIndex].Cells["nome"].Value.ToString();
             txtSenha.Text = dtUsuario.Rows[e.RowIndex].Cells["senha"].Value.ToString();
+           txtEmail.Text= dtUsuario.Rows[e.RowIndex].Cells["email"].Value.ToString();
             cboPerfil.Text = dtUsuario.Rows[e.RowIndex].Cells["perfil"].Value.ToString();
         }
 
@@ -85,6 +87,7 @@ namespace testando
             usmodelo.senha = txtSenha.Text;
             usmodelo.idusuario = codigo;
             usmodelo.idperfil = idperfil;
+            usmodelo.email= txtEmail.Text;
             if( uscontroler.editar(usmodelo) == true)
             {
                 MessageBox.Show("Usuario atualizado com sucesso");

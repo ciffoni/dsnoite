@@ -44,6 +44,8 @@
             this.cboPerfil = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtUsuario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,11 +175,29 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Perfil:";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(46, 125);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "E-mail:";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(85, 122);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.TabIndex = 15;
+            // 
             // FrmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cboPerfil);
             this.Controls.Add(this.btnListarUsuario);
@@ -218,5 +238,7 @@
         private System.Windows.Forms.ComboBox cboPerfil;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtEmail;
     }
 }
