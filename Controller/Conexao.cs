@@ -119,16 +119,17 @@ namespace Controller
                     if(dt.Rows.Count > 0)
                     {
                         //varaivel email e senha
-                        string email = "jorge.ciffoni@sistemafiep.org.br";
+                        string email = "ciffoni@gmail.com";
                         string senha = "senha";
                         //chamar o acesso ao email
                         SmtpClient cliente=new SmtpClient();
                         //chamo o nome do servidor
-                        cliente.Host = "stmp.office365.com";
+                        cliente.Host = "smtp.google.com";
                         //defino a porta de comunicação
-                        cliente.Port = 587;
+                        cliente.Port = 25;// 587;
                         //segurança ssl habilitada
-                        cliente.EnableSsl = true;
+                        cliente.EnableSsl = false;
+                        
                         //chamo minhas credenciais de acesso ao email
                         cliente.Credentials = new System.Net.NetworkCredential(email, senha);
                         //preparo a mensagem de email
