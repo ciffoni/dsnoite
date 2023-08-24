@@ -103,7 +103,7 @@ namespace Controller
                 //criar a tabela de dados
                 DataTable dt= new DataTable();
                  string msg = null;//validação da informação
-                string psenha;
+              
 
                 if(login == null) {//valido o preenchimento
                     msg = "login está vazio";
@@ -119,34 +119,44 @@ namespace Controller
                     if(dt.Rows.Count > 0)
                     {
                         //varaivel email e senha
-                        string email = "ciffoni@gmail.com";
+                        string email = "jorge.ciffoni@sistemafiep.org.br";
                         string senha = "senha";
+                       
                         //chamar o acesso ao email
                         SmtpClient cliente=new SmtpClient();
                         //chamo o nome do servidor
-                        cliente.Host = "smtp.google.com";
+                        cliente.Host = "smtp.office365.com";
                         //defino a porta de comunicação
-                        cliente.Port = 25;// 587;
-                        //segurança ssl habilitada
-                        cliente.EnableSsl = false;
+                        cliente.Port =  587;//25;//
                         
+                        //segurança ssl habilitada
+                        cliente.EnableSsl = true;
+                        //usar credencial padrao
+                        cliente.UseDefaultCredentials = false;
                         //chamo minhas credenciais de acesso ao email
                         cliente.Credentials = new System.Net.NetworkCredential(email, senha);
-                        //preparo a mensagem de email
+                      //metodo de rede
+                        cliente.DeliveryMethod=SmtpDeliveryMethod.Network;
+                      
+
+                         //preparo a mensagem de email
                         MailMessage mail = new MailMessage();//criar a mensagem
                        //configura o email de envio
                         mail.Sender = new MailAddress(email, "Sistema TDS");
                         mail.From = new MailAddress(email, "Recuperar senha");
                         //email do usuário 
-                        mail.To.Add(new MailAddress(dt.Rows[0][4].ToString(), dt.Rows[0][1].ToString())) ;
+                        string emailusuario= dt.Rows[0][4].ToString();
+                        mail.To.Add(new MailAddress(emailusuario, dt.Rows[0][1].ToString())) ;
                         mail.Subject = "lembrar senha";
                         mail.Body = "Ola" + dt.Rows[0][1].ToString() + "sua senha é:" + aleatorio.Next(2000);
                         mail.IsBodyHtml= true;//cria um arquivo html
+                        
                         mail.Priority = MailPriority.High;//prioridade de envio
                         try
                         {
                             //enviar email
-                            cliente.Send(mail);
+                           cliente.SendAsync(email, emailusuario, mail.Subject, mail.Body, 1);
+                          // cliente.Send(mail);
                             msg = "e-mail enviado com sucesso";
                         }catch(Exception ex)
                         {

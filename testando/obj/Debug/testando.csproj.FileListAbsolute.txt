@@ -112,3 +112,4 @@ C:\Users\aluno\Documents\GitHub\dsnoite\testando\obj\Debug\testando.exe
 C:\Users\aluno\Documents\GitHub\dsnoite\testando\obj\Debug\testando.pdb
 C:\Users\aluno\Documents\GitHub\dsnoite\testando\bin\Debug\testando.exe.config
 C:\Users\aluno\Documents\GitHub\dsnoite\testando\obj\Debug\testando.csproj.CopyComplete
+C:\Users\aluno\Documents\GitHub\dsnoite\testando\obj\Debug\testando.csproj.SuggestedBindingRedirects.cache
