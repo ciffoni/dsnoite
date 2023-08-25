@@ -26,10 +26,8 @@ namespace Controller
         //strCon caminho de conexao
         static private string StrCon = "server=" + servidor + ";database=" + db +
             ";user id=" + usuario + ";pasword=" + senha;
-        //chamo o modelo usuario
-        UsuarioModelo usuarioModelo = new UsuarioModelo();
         
-        //metodo de obter a conexao com o mysql
+         //metodo de obter a conexao com o mysql
         public MySqlConnection getConexao()
         {
             //defino a varial conexao instanciando uma nova conexão
@@ -81,6 +79,7 @@ namespace Controller
             MySqlCommand cmd = new MySqlCommand(sql, sqlCon);
             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
             adapter.Fill(dt);
+           // sqlCon.Close();
             return dt;
 
         }
@@ -103,19 +102,21 @@ namespace Controller
                 //criar a tabela de dados
                 DataTable dt= new DataTable();
                  string msg = null;//validação da informação
-              
-
+                string senhanova;//guarda a senha gerada
+                bool confirmar;//guarda o resultado do editar
                 if(login == null) {//valido o preenchimento
                     msg = "login está vazio";
                 }
                 else
                 {
-                    
-                    conn=getConexao();//conexao o BD
-                    conn.Open(); //abrir o BD
+
+                    //abrir o BD
+                    conn = getConexao();//chamo o metodo obter conexao
+                    conn.Open();//abro o banco direto
                     //chamo a função obter dados passando o SQL com o login
                     dt = obterdados("select * from usuario where nome='" + login+"'");
                    //verifico se achou algum registro
+
                     if(dt.Rows.Count > 0)
                     {
                         //varaivel email e senha
@@ -148,16 +149,35 @@ namespace Controller
                         string emailusuario= dt.Rows[0][4].ToString();
                         mail.To.Add(new MailAddress(emailusuario, dt.Rows[0][1].ToString())) ;
                         mail.Subject = "lembrar senha";
-                        mail.Body = "Ola" + dt.Rows[0][1].ToString() + "sua senha é:" + aleatorio.Next(2000);
+                        //gera senha aleatoria
+                        senhanova = aleatorio.Next(2000).ToString();
+                        //chamo o modelo e o controle usuario
+                        UsuarioModelo usuarioModelo = new UsuarioModelo();
+                        UsuarioController usController = new UsuarioController();
+
+                        usuarioModelo.senha = senhanova;
+                        usuarioModelo.nome = dt.Rows[0][1].ToString();
+                        usuarioModelo.email = dt.Rows[0][4].ToString();
+                        usuarioModelo.idperfil= Convert.ToInt32(dt.Rows[0][3].ToString());
+                        usuarioModelo.idusuario = Convert.ToInt32(dt.Rows[0][0].ToString());
+                        confirmar=usController.editar(usuarioModelo);
+                        mail.Body = "Ola" + dt.Rows[0][1].ToString() + "sua senha é:" + senhanova;
                         mail.IsBodyHtml= true;//cria um arquivo html
                         
                         mail.Priority = MailPriority.High;//prioridade de envio
                         try
                         {
                             //enviar email
-                           cliente.SendAsync(email, emailusuario, mail.Subject, mail.Body, 1);
-                          // cliente.Send(mail);
-                            msg = "e-mail enviado com sucesso";
+                            if (confirmar)
+                            {                       
+                                cliente.SendAsync(email, emailusuario, mail.Subject, mail.Body, 1);
+                            // cliente.Send(mail);
+                                msg = "e-mail enviado com a nova senha";
+                            }
+                            else
+                            {
+                                msg = "não foi possivel atualizar senha";
+                            }
                         }catch(Exception ex)
                         {
                             throw new Exception("Erro ao enviar o email:" + ex.Message);

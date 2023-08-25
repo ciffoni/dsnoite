@@ -14,6 +14,8 @@ namespace testando
 {
     public partial class FrmLogn : Form
     {
+        int codigoUsuario;
+        UsuarioModelo us = new UsuarioModelo();
         public FrmLogn()
         {
             InitializeComponent();
@@ -21,8 +23,7 @@ namespace testando
         
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            int codigoUsuario;
-            UsuarioModelo us = new UsuarioModelo();
+            
             UsuarioController uscontrole= new UsuarioController();
             us.nome = txtUsuario.Text;
             us.senha = txtSenha.Text;
@@ -75,6 +76,7 @@ namespace testando
         private void btnRecuperarSenha_Click(object sender, EventArgs e)
         {
             Conexao com= new Conexao();
+            
           lblMensagem.Text= com.recuperaremail(txtUsuario.Text);
 
         }
