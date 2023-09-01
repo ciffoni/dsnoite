@@ -94,5 +94,12 @@ namespace testando
             Lprod.MdiParent = this;
             Lprod.Show();
         }
+
+        private void painelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPainel painel = new FrmPainel();
+            painel.MdiParent = this;
+            painel.Show();
+        }
     }
 }
