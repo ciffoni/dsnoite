@@ -86,3 +86,9 @@ C:\Users\aluno\Documents\GitHub\dsnoite\Controller\obj\Debug\Controller.csproj.C
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\obj\Debug\Controller.csproj.CopyComplete
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\obj\Debug\Controller.dll
 C:\Users\aluno\Documents\GitHub\dsnoite\Controller\obj\Debug\Controller.pdb
+C:\Users\cwb\Documents\GitHub\dsnoite\Controller\bin\Debug\PdfSharp.Charting.dll
+C:\Users\cwb\Documents\GitHub\dsnoite\Controller\bin\Debug\PdfSharp.dll
+C:\Users\cwb\Documents\GitHub\dsnoite\Controller\bin\Debug\PdfSharp.xml
+C:\Users\cwb\Documents\GitHub\dsnoite\Controller\bin\Debug\PdfSharp.Charting.xml
+C:\Users\cwb\Documents\GitHub\dsnoite\Controller\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\cwb\Documents\GitHub\dsnoite\Controller\bin\Debug\de\PdfSharp.Charting.resources.dll

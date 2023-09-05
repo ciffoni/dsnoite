@@ -101,5 +101,12 @@ namespace testando
             painel.MdiParent = this;
             painel.Show();
         }
+
+        private void gráficosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRelatorios rel = new FrmRelatorios();
+            rel.MdiParent = this;
+            rel.Show();
+        }
     }
 }
