@@ -124,3 +124,4 @@ C:\Users\cwb\Documents\GitHub\dsnoite\testando\obj\Debug\testando.FrmPrincipal.r
 C:\Users\cwb\Documents\GitHub\dsnoite\testando\obj\Debug\testando.FrmProduto.resources
 C:\Users\cwb\Documents\GitHub\dsnoite\testando\obj\Debug\testando.FrmRelatorios.resources
 C:\Users\cwb\Documents\GitHub\dsnoite\testando\obj\Debug\testando.FrmUsuario.resources
+C:\Users\aluno\Documents\GitHub\dsnoite\testando\obj\Debug\testando.FrmRelatorios.resources
