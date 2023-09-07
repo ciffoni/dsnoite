@@ -108,5 +108,12 @@ namespace testando
             rel.MdiParent = this;
             rel.Show();
         }
+
+        private void crystalReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCristal cristal = new FrmCristal();
+            cristal.MdiParent = this;
+            cristal.Show();
+        }
     }
 }
