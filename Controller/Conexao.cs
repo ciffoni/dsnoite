@@ -95,6 +95,7 @@ namespace Controller
             }
             return sb.ToString();
         }
+
         public string recuperaremail(string login)
         { //testar a recuperacao
             try

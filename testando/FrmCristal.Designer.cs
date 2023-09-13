@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.enterpriseReport1 = new CrystalDecisions.Shared.EnterpriseReport();
+            this.btnExcel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // enterpriseReport1
@@ -43,11 +44,22 @@
             this.enterpriseReport1.WebConnector = "";
             this.enterpriseReport1.WebServiceUrl = "";
             // 
+            // btnExcel
+            // 
+            this.btnExcel.Location = new System.Drawing.Point(286, 161);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(75, 23);
+            this.btnExcel.TabIndex = 0;
+            this.btnExcel.Text = "button1";
+            this.btnExcel.UseVisualStyleBackColor = true;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
             // FrmCristal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnExcel);
             this.Name = "FrmCristal";
             this.Text = "FrmCristal";
             this.Load += new System.EventHandler(this.FrmCristal_Load);
@@ -58,5 +70,6 @@
         #endregion
 
         private CrystalDecisions.Shared.EnterpriseReport enterpriseReport1;
+        private System.Windows.Forms.Button btnExcel;
     }
 }

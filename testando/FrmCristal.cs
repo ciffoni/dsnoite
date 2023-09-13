@@ -12,6 +12,10 @@ using CrystalDecisions.CrystalReports.Engine;
 using Controller;
 using MySql.Data.MySqlClient;
 using CrystalDecisions.Windows.Forms;
+using System.Configuration;
+using System.IO;
+using Controller;
+using System.Xml.Linq;
 
 namespace testando
 {
@@ -25,18 +29,71 @@ namespace testando
 
         private void FrmCristal_Load(object sender, EventArgs e)
         {
-            Conexao com = new Conexao();
-            MySqlConnection con = com.getConexao();
-            CrystalReportViewer cr = new CrystalReportViewer();
-           // rprt.Load(@"C:\Users\Nilesh\Documents\visual studio 2010\Projects\WindowsFormsApplication5\WindowsFormsApplication5\CrystalReport1.rpt");
-            MySqlCommand cmd = new MySqlCommand("Select * from usuario", con);
-            cmd.CommandType = CommandType.StoredProcedure;
-            MySqlDataAdapter sda = new MySqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            sda.Fill(ds, "Newtbl_data");
-            rprt.SetDataSource(ds);
-            cr.ReportSource = rprt;
+            
 
         }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            string endereco = "relatorioUsuario.csv";
+        
+                /*
+                "C:\\relatorio.csv";
+            */
+            Conexao com= new Conexao();
+
+            using (StreamWriter writer = new StreamWriter(endereco, false, Encoding.GetEncoding("iso-8859-15")))
+
+            {
+
+                // Cabeçalho 
+
+                writer.WriteLine("Nome;Email");
+
+
+                // Conexão com o banco de dados
+
+                MySqlConnection conexao = com.getConexao();
+
+
+               
+                    string query = "SELECT NOME,email FROM usuario";
+
+
+                    MySqlCommand sqlComand = new MySqlCommand(query, conexao);
+
+
+                    conexao.Open();
+
+
+                    using (IDataReader reader = sqlComand.ExecuteReader())
+
+                    {
+
+                        while (reader.Read())
+
+                        {
+
+                            // escrevendo os registros
+
+                            writer.WriteLine(Convert.ToString(reader["nome"]) + ";" + Convert.ToString(reader["email"]));
+
+                        }
+
+                    }
+
+                    conexao.Close();
+                // mensagem de arquivo gerado com sucesso.
+
+                MessageBox.Show("Relatório gerado com sucesso.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+
+        }
+
+       
+
+
+         }
     }
-}
+
