@@ -188,6 +188,7 @@ namespace testando
             }
             data_validade.Value = Convert.ToDateTime(dtProduto.Rows[e.RowIndex].Cells[5].Value);
             ptbfoto.Image =Image.FromFile(dtProduto.Rows[e.RowIndex].Cells[6].Value.ToString());
+            lblFoto.Text = dtProduto.Rows[e.RowIndex].Cells[6].Value.ToString();
         }
     }
 }

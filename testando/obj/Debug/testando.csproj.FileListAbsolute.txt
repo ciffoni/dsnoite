@@ -162,3 +162,5 @@ C:\Users\aluno\Documents\GitHub\dsnoite\testando\bin\Debug\zh-CHS\CrystalDecisio
 C:\Users\aluno\Documents\GitHub\dsnoite\testando\bin\Debug\zh-CHT\CrystalDecisions.Shared.resources.dll
 C:\Users\aluno\Documents\GitHub\dsnoite\testando\obj\Debug\testando.exe.config
 C:\Users\aluno\Documents\GitHub\dsnoite\testando\obj\Debug\testando.FrmCristal.resources
+C:\Users\aluno\Documents\GitHub\dsnoite\testando\bin\Debug\Correios.dll
+C:\Users\aluno\Documents\GitHub\dsnoite\testando\bin\Debug\Correios.pdb

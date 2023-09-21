@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Modelo;
 using Controller;
-
+using Correios;// chamo a biblioteca dos correios
 namespace testando
 {
     public partial class FrmUsuario : Form
@@ -115,6 +115,17 @@ namespace testando
         private void txtSenha_MouseHover(object sender, EventArgs e)
         {
             toolTip1.SetToolTip(txtSenha, "Tamanho 8 caracter letras e numeros");
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            //instanciando a classe do correio
+            var correio = new CorreiosApi();
+            //armazenamento das informações do endereço
+            var dados = correio.consultaCEP(textBox1.Text);//chama o metodo de consultaCEP
+            MessageBox.Show("Endereço :" + dados.end + "\n Cidade:"
+                + dados.cidade + "\n Bairro: " + dados.bairro + "\n UF:" + dados.uf);
+           
         }
     }
 }
