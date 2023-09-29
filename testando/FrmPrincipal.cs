@@ -115,5 +115,12 @@ namespace testando
             cristal.MdiParent = this;
             cristal.Show();
         }
+
+        private void backupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBackup backup = new FrmBackup();
+            backup.MdiParent = this;
+            backup.Show();
+        }
     }
 }

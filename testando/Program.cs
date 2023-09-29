@@ -16,7 +16,7 @@ namespace testando
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLogn());
+            Application.Run(new FrmBackup());
         }
     }
 }

@@ -40,10 +40,11 @@
             this.usuárioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.listarProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gráficosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crystalReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
-            this.crystalReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,28 +123,36 @@
             // usuárioToolStripMenuItem1
             // 
             this.usuárioToolStripMenuItem1.Name = "usuárioToolStripMenuItem1";
-            this.usuárioToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.usuárioToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
             this.usuárioToolStripMenuItem1.Text = "Usuário";
             this.usuárioToolStripMenuItem1.Click += new System.EventHandler(this.usuárioToolStripMenuItem1_Click);
             // 
             // listarProdutoToolStripMenuItem
             // 
             this.listarProdutoToolStripMenuItem.Name = "listarProdutoToolStripMenuItem";
-            this.listarProdutoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listarProdutoToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.listarProdutoToolStripMenuItem.Text = "Listar produto";
             this.listarProdutoToolStripMenuItem.Click += new System.EventHandler(this.listarProdutoToolStripMenuItem_Click);
             // 
             // gráficosToolStripMenuItem
             // 
             this.gráficosToolStripMenuItem.Name = "gráficosToolStripMenuItem";
-            this.gráficosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gráficosToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.gráficosToolStripMenuItem.Text = "Gráficos";
             this.gráficosToolStripMenuItem.Click += new System.EventHandler(this.gráficosToolStripMenuItem_Click);
+            // 
+            // crystalReportToolStripMenuItem
+            // 
+            this.crystalReportToolStripMenuItem.Name = "crystalReportToolStripMenuItem";
+            this.crystalReportToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.crystalReportToolStripMenuItem.Text = "Crystal Report";
+            this.crystalReportToolStripMenuItem.Click += new System.EventHandler(this.crystalReportToolStripMenuItem_Click);
             // 
             // ajudaToolStripMenuItem
             // 
             this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.informaçõesToolStripMenuItem});
+            this.informaçõesToolStripMenuItem,
+            this.backupToolStripMenuItem});
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
             this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.ajudaToolStripMenuItem.Text = "Ajuda";
@@ -151,7 +160,7 @@
             // informaçõesToolStripMenuItem
             // 
             this.informaçõesToolStripMenuItem.Name = "informaçõesToolStripMenuItem";
-            this.informaçõesToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.informaçõesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.informaçõesToolStripMenuItem.Text = "Informações";
             // 
             // label1
@@ -163,12 +172,12 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "label1";
             // 
-            // crystalReportToolStripMenuItem
+            // backupToolStripMenuItem
             // 
-            this.crystalReportToolStripMenuItem.Name = "crystalReportToolStripMenuItem";
-            this.crystalReportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.crystalReportToolStripMenuItem.Text = "Crystal Report";
-            this.crystalReportToolStripMenuItem.Click += new System.EventHandler(this.crystalReportToolStripMenuItem_Click);
+            this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.backupToolStripMenuItem.Text = "&backup";
+            this.backupToolStripMenuItem.Click += new System.EventHandler(this.backupToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -209,5 +218,6 @@
         private System.Windows.Forms.ToolStripMenuItem painelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gráficosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem crystalReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem;
     }
 }
