@@ -1,0 +1,348 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|c:\\users\\aluno\\documents\\github\\dsnoite\\testando\\frmbackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmbackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25643A74-8C1D-4964-911A-BF0101BACF2E}|..\\Controller\\Controller.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\controller\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmbackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmbackup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmcristal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmcristal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmcristal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmcristal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmrelatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmrelatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmrelatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmrelatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25643A74-8C1D-4964-911A-BF0101BACF2E}|..\\Controller\\Controller.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\controller\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmlogn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmlogn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmpainel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmpainel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmpainel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmpainel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmlogn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmlogn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1377D011-5FA1-4FBB-ACFD-03F07CB136F4}|..\\Modelo\\Modelo.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\modelo\\produtomodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\frmlistarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B9D7AB3-85E1-4D46-98E5-7A1B4E932884}|testando.csproj|solutionrelative:frmlistarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmBackup.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmBackup.cs",
+              "RelativeDocumentMoniker": "FrmBackup.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmBackup.cs",
+              "RelativeToolTip": "FrmBackup.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAwDYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T12:01:36.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "FrmPrincipal.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmPrincipal.cs",
+              "RelativeToolTip": "FrmPrincipal.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAmwHoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-09-26T12:01:36.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmBackup.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmBackup.cs",
+              "RelativeDocumentMoniker": "FrmBackup.cs",
+              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmBackup.cs [Design]",
+              "RelativeToolTip": "FrmBackup.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-09-26T12:01:36.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmPrincipal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "FrmPrincipal.cs",
+              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmPrincipal.cs [Design]",
+              "RelativeToolTip": "FrmPrincipal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-09-26T12:01:36.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmUsuario.cs",
+              "RelativeDocumentMoniker": "FrmUsuario.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmUsuario.cs",
+              "RelativeToolTip": "FrmUsuario.cs",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAxwIMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T12:01:36.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmProduto.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmProduto.cs",
+              "RelativeDocumentMoniker": "FrmProduto.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmProduto.cs",
+              "RelativeToolTip": "FrmProduto.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAhwL4AAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-09-26T12:01:36.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmUsuario.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmUsuario.cs",
+              "RelativeDocumentMoniker": "FrmUsuario.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmUsuario.cs [Design]",
+              "RelativeToolTip": "FrmUsuario.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T12:01:36.688Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T12:01:35.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Conexao.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\Controller\\Conexao.cs",
+              "RelativeDocumentMoniker": "..\\Controller\\Conexao.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\Controller\\Conexao.cs",
+              "RelativeToolTip": "..\\Controller\\Conexao.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T12:01:35.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FrmCristal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmCristal.cs",
+              "RelativeDocumentMoniker": "FrmCristal.cs",
+              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmCristal.cs [Design]",
+              "RelativeToolTip": "FrmCristal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-09-26T12:01:36.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmProduto.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmProduto.cs",
+              "RelativeDocumentMoniker": "FrmProduto.cs",
+              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmProduto.cs [Design]",
+              "RelativeToolTip": "FrmProduto.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-09-26T12:01:36.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FrmCristal.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmCristal.cs",
+              "RelativeDocumentMoniker": "FrmCristal.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmCristal.cs",
+              "RelativeToolTip": "FrmCristal.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAwwFAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-09-26T12:01:36.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FrmRelatorios.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmRelatorios.cs",
+              "RelativeDocumentMoniker": "FrmRelatorios.cs",
+              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmRelatorios.cs [Design]",
+              "RelativeToolTip": "FrmRelatorios.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-09-26T12:01:36.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FrmRelatorios.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmRelatorios.cs",
+              "RelativeDocumentMoniker": "FrmRelatorios.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmRelatorios.cs",
+              "RelativeToolTip": "FrmRelatorios.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-09-26T12:01:36.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FrmPainel.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmPainel.cs",
+              "RelativeDocumentMoniker": "FrmPainel.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmPainel.cs",
+              "RelativeToolTip": "FrmPainel.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA0wBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-09-26T12:01:36.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FrmPainel.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmPainel.cs",
+              "RelativeDocumentMoniker": "FrmPainel.cs",
+              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmPainel.cs [Design]",
+              "RelativeToolTip": "FrmPainel.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-09-26T12:01:36.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FrmLogn.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmLogn.cs",
+              "RelativeDocumentMoniker": "FrmLogn.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmLogn.cs",
+              "RelativeToolTip": "FrmLogn.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-09-26T12:01:36.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\Controller\\ProdutoController.cs",
+              "RelativeDocumentMoniker": "..\\Controller\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\Controller\\ProdutoController.cs",
+              "RelativeToolTip": "..\\Controller\\ProdutoController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAqwCsAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T12:01:36.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FrmLogn.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmLogn.cs",
+              "RelativeDocumentMoniker": "FrmLogn.cs",
+              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmLogn.cs [Design]",
+              "RelativeToolTip": "FrmLogn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-09-26T12:01:36.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProdutoModelo.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\Modelo\\ProdutoModelo.cs",
+              "RelativeDocumentMoniker": "..\\Modelo\\ProdutoModelo.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\Modelo\\ProdutoModelo.cs",
+              "RelativeToolTip": "..\\Modelo\\ProdutoModelo.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAIwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T12:01:36.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FrmListarUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmListarUsuario.cs",
+              "RelativeDocumentMoniker": "FrmListarUsuario.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\dsnoite\\testando\\FrmListarUsuario.cs",
+              "RelativeToolTip": "FrmListarUsuario.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAswDwAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-09-26T12:01:36.707Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
